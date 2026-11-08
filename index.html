@@ -307,9 +307,9 @@
                 <p class="text-xs text-gray-300"><i class="fa-solid fa-envelope mr-1"></i> dr.rustiadentalclinic@gmail.com</p>
             </div>
             <div class="space-y-2">
-                <h4 class="font-bold text-gold text-sm uppercase tracking-wider">Hours</h4>
-                <p class="text-xs text-gray-300"><i class="fa-solid fa-clock mr-1"></i> Monday – Sunday</p>
-                <p class="text-xs text-gray-300">9:00 AM – 8:00 PM</p>
+                <h4 class="font-bold text-gold text-sm uppercase tracking-wider">Hours & Messaging</h4>
+                <p class="text-xs text-gray-300"><i class="fa-solid fa-clock mr-1"></i> Daily: 9:00 AM – 8:00 PM</p>
+                <p class="text-xs text-gray-300 pt-1"><i class="fa-solid fa-comments text-gold mr-1"></i> Also available on Viber & WhatsApp</p>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-gray-700 text-center text-xs text-gray-400">
@@ -330,8 +330,7 @@
                 </button>
             </div>
             
-            <form action="https://formsubmit.co/dr.rustiadentalclinic@gmail.com" method="POST" class="p-6 space-y-4">
-                <input type="hidden" name="_next" value="https://drrustiadentalclinic.github.io/rustia-dental-clinic/">
+            <form id="appointmentForm" action="https://formsubmit.co/ajax/dr.rustiadentalclinic@gmail.com" method="POST" class="p-6 space-y-4" onsubmit="handleFormSubmit(event)">
                 <input type="hidden" name="_subject" value="New Appointment Request from Rustia Dental Clinic Website">
                 <input type="hidden" name="_captcha" value="false">
 
@@ -377,14 +376,37 @@
                     <textarea name="Notes" rows="2" class="w-full px-4 py-2.5 rounded-xl border border-ivory-dark bg-ivory text-sm focus:outline-none focus:border-sage" placeholder="Specific time or dental concern..."></textarea>
                 </div>
 
-                <button type="submit" class="w-full bg-sage hover:bg-sage-dark text-white font-bold py-3 rounded-xl shadow transition-all text-sm">
+                <button type="submit" id="submitBtn" class="w-full bg-sage hover:bg-sage-dark text-white font-bold py-3 rounded-xl shadow transition-all text-sm">
                     Confirm & Send Booking Request
                 </button>
             </form>
         </div>
     </div>
 
-    <!-- JavaScript for Modal Control -->
+    <!-- Custom Success Popup Modal -->
+    <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 hidden backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl p-8 text-center space-y-6">
+            <div class="w-20 h-20 bg-sage-light text-sage mx-auto rounded-full flex items-center justify-center text-4xl shadow-inner">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-2xl font-bold text-charcoal">Appointment Request Sent!</h3>
+                <p class="text-sm text-charcoal-light leading-relaxed">
+                    Thank you for choosing Rustia Dental Clinic. Our team will contact you shortly to confirm your schedule.
+                </p>
+            </div>
+            <div class="bg-ivory p-4 rounded-2xl border border-ivory-dark text-xs text-charcoal space-y-1">
+                <p class="font-bold text-sage">For urgent matters or immediate confirmation:</p>
+                <p class="text-sm font-bold text-gold pt-1"><i class="fa-solid fa-phone mr-1"></i> 09086653969</p>
+                <p class="text-gray-600 pt-1">Also available via <span class="font-semibold text-charcoal">Viber</span> & <span class="font-semibold text-charcoal">WhatsApp</span></p>
+            </div>
+            <button onclick="closeSuccessModal()" class="w-full bg-sage hover:bg-sage-dark text-white font-bold py-3 rounded-xl shadow transition-all text-sm">
+                Close Window
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal & AJAX Form Handling -->
     <script>
         function openBookingModal() {
             document.getElementById('bookingModal').classList.remove('hidden');
@@ -392,12 +414,45 @@
         function closeBookingModal() {
             document.getElementById('bookingModal').classList.add('hidden');
         }
-        window.onclick = function(event) {
-            let modal = document.getElementById('bookingModal');
-            if (event.target == modal) {
-                closeBookingModal();
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.add('hidden');
+        }
+
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('appointmentForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const formData = new FormData(form);
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending Request...';
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    closeBookingModal();
+                    form.reset();
+                    document.getElementById('successModal').classList.remove('hidden');
+                } else {
+                    alert('There was a problem submitting your form. Please try calling us directly.');
+                }
+            } catch (error) {
+                alert('Network error. Please call us directly at 09086653969.');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Confirm & Send Booking Request';
             }
         }
-    </script>
-</body>
-</html>
+
+        window.onclick = function(event) {
+            let bookingModal = document.getElementById('bookingModal');
+            let successModal = document.getElementById('successModal');
+            if (event.target == bookingModal) {
+                closeBookingModal();
+            }
+            if (event.target == successModal
