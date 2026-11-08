@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rustia Dental Clinic | Manila & Taguig Dental Services</title>
-    <meta name="description" content="Rustia Dental Clinic provides expert dental care in Manila and Taguig. Led by Dr. Thomas Rustia and Dr. John Tom Kenneth S. Rustia.">
+    <meta name="description" content="Rustia Dental Clinic provides expert dental care in Manila and Taguig. Initial consultation starts at ₱300. Led by Dr. Thomas Rustia and Dr. John Tom Kenneth S. Rustia.">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,7 +36,7 @@
       "url": "https://drrustiadentalclinic.github.io/rustia-dental-clinic/",
       "telephone": "09086653969",
       "email": "dr.rustiadentalclinic@gmail.com",
-      "priceRange": "₱₱",
+      "priceRange": "₱300 - ₱₱",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -89,12 +89,12 @@
                 <a href="#branches" class="hover:text-sage transition-colors">Branches</a>
                 <a href="#services" class="hover:text-sage transition-colors">Services</a>
                 <a href="#dentists" class="hover:text-sage transition-colors">Our Dentists</a>
-                <a href="#faq" class="hover:text-sage transition-colors">FAQ</a>
+                <a href="#book" class="hover:text-sage transition-colors">Book Appointment</a>
             </nav>
             <div>
-                <button onclick="openBookingModal()" class="bg-sage hover:bg-sage-dark text-white font-medium px-6 py-2.5 rounded-full shadow-md transition-all transform hover:-translate-y-0.5 text-sm">
+                <a href="#book" class="bg-sage hover:bg-sage-dark text-white font-medium px-6 py-2.5 rounded-full shadow-md transition-all transform hover:-translate-y-0.5 text-sm inline-block">
                     Book Appointment
-                </button>
+                </a>
             </div>
         </div>
     </header>
@@ -105,7 +105,7 @@
             <div class="space-y-6">
                 <span class="inline-flex items-center space-x-2 bg-sage/10 text-sage-dark font-semibold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">
                     <i class="fa-solid fa-star text-gold"></i>
-                    <span>Trusted Care Across Metro Manila</span>
+                    <span>Initial Consultation Starts at ₱300</span>
                 </span>
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-charcoal tracking-tight leading-tight">
                     Your Smile, Our Passionate Legacy.
@@ -114,9 +114,9 @@
                     Combining over 35 years of trusted orthodontic expertise with modern dental techniques. Serving patients across Manila and Taguig with gentle, high-quality family dental care.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <button onclick="openBookingModal()" class="bg-sage hover:bg-sage-dark text-white font-semibold px-8 py-3.5 rounded-full shadow-lg text-center transition-all">
+                    <a href="#book" class="bg-sage hover:bg-sage-dark text-white font-semibold px-8 py-3.5 rounded-full shadow-lg text-center transition-all">
                         Book Your Visit Now
-                    </button>
+                    </a>
                     <a href="tel:09086653969" class="bg-white border-2 border-gold text-charcoal hover:bg-gold/10 font-semibold px-8 py-3.5 rounded-full shadow-sm text-center transition-all flex items-center justify-center space-x-2">
                         <i class="fa-solid fa-phone text-gold"></i>
                         <span>Call 09086653969</span>
@@ -127,11 +127,11 @@
                 <div class="w-full max-w-md bg-white p-8 rounded-3xl shadow-xl border border-ivory-dark space-y-6">
                     <div class="flex items-center space-x-4 border-b border-ivory-dark pb-4">
                         <div class="w-12 h-12 rounded-full bg-sage-light flex items-center justify-center text-sage font-bold text-lg">
-                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <i class="fa-solid fa-peso-sign"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-charcoal">Clinic Hours</h3>
-                            <p class="text-sm text-charcoal-light">Monday – Sunday: 9:00 AM – 8:00 PM</p>
+                            <h3 class="font-bold text-charcoal">Initial Consultation</h3>
+                            <p class="text-sm text-gold font-bold">Starts at ₱300</p>
                         </div>
                     </div>
                     <div class="space-y-4">
@@ -170,12 +170,6 @@
                     <h3 class="text-2xl font-bold text-charcoal">Manila Branch</h3>
                     <p class="text-charcoal-light"><i class="fa-solid fa-map-pin text-gold mr-2"></i>964 Palawan, Sampaloc, Manila</p>
                     <p class="text-sm text-charcoal-light">Offering comprehensive orthodontic adjustments, routine cleanings, extractions, and restorative treatments.</p>
-                    <div class="pt-2">
-                        <button onclick="openBookingModal()" class="text-sage font-bold text-sm hover:underline flex items-center space-x-1">
-                            <span>Book Manila Branch</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
-                    </div>
                 </div>
                 <div class="bg-ivory p-8 rounded-3xl border border-ivory-dark shadow-sm hover:shadow-md transition-shadow space-y-4">
                     <div class="w-12 h-12 bg-sage text-white rounded-2xl flex items-center justify-center text-xl font-bold">
@@ -184,12 +178,6 @@
                     <h3 class="text-2xl font-bold text-charcoal">Taguig Branch</h3>
                     <p class="text-charcoal-light"><i class="fa-solid fa-map-pin text-gold mr-2"></i>108 F. Manalo St, Taguig</p>
                     <p class="text-sm text-charcoal-light">Equipped for family dentistry, preventive care, cosmetic alignment, and emergency dental pain relief.</p>
-                    <div class="pt-2">
-                        <button onclick="openBookingModal()" class="text-sage font-bold text-sm hover:underline flex items-center space-x-1">
-                            <span>Book Taguig Branch</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -203,6 +191,12 @@
                 <p class="text-charcoal-light">Professional dental procedures tailored for patients of all ages.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-ivory-dark space-y-3 hover:border-sage transition-colors">
+                    <div class="text-gold text-2xl"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h3 class="font-bold text-lg text-charcoal">Initial Consultation</h3>
+                    <p class="text-sm font-semibold text-gold">Starts at ₱300</p>
+                    <p class="text-sm text-charcoal-light">Comprehensive oral assessment, diagnosis, and treatment planning with our expert dentists.</p>
+                </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-ivory-dark space-y-3 hover:border-sage transition-colors">
                     <div class="text-gold text-2xl"><i class="fa-solid fa-teeth"></i></div>
                     <h3 class="font-bold text-lg text-charcoal">Orthodontics & Braces</h3>
@@ -227,11 +221,6 @@
                     <div class="text-gold text-2xl"><i class="fa-solid fa-face-smile"></i></div>
                     <h3 class="font-bold text-lg text-charcoal">Crowns, Bridges & Dentures</h3>
                     <p class="text-sm text-charcoal-light">High-quality prosthetic replacements to restore full chewing function and appearance.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-ivory-dark space-y-3 hover:border-sage transition-colors">
-                    <div class="text-gold text-2xl"><i class="fa-solid fa-kit-medical"></i></div>
-                    <h3 class="font-bold text-lg text-charcoal">Pediatric & Family Care</h3>
-                    <p class="text-sm text-charcoal-light">Gentle dental checkups and preventive treatments designed specially for children and families.</p>
                 </div>
             </div>
         </div>
@@ -265,26 +254,17 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-ivory">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 space-y-3">
-                <h2 class="text-3xl sm:text-4xl font-bold text-charcoal">Frequently Asked Questions</h2>
-                <p class="text-charcoal-light">Everything you need to know about visiting Rustia Dental Clinic.</p>
+    <!-- Embedded Google Form Section -->
+    <section id="book" class="py-20 bg-ivory border-t border-ivory-dark">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="text-center space-y-3">
+                <h2 class="text-3xl sm:text-4xl font-bold text-charcoal">Book Your Appointment</h2>
+                <p class="text-charcoal-light">Fill out the form below to request your schedule. For urgent matters, call us at <span class="font-bold text-gold">09086653969</span> (also available via Viber & WhatsApp).</p>
             </div>
-            <div class="space-y-6">
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-ivory-dark">
-                    <h3 class="font-bold text-lg text-charcoal mb-2">What are the clinic operating hours?</h3>
-                    <p class="text-sm text-charcoal-light">Rustia Dental Clinic is open daily from 9:00 AM to 8:00 PM across both our Manila and Taguig branches.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-ivory-dark">
-                    <h3 class="font-bold text-lg text-charcoal mb-2">Where are your branches located?</h3>
-                    <p class="text-sm text-charcoal-light">We have two convenient locations: our Manila branch at 964 Palawan, Sampaloc, Manila, and our Taguig branch at 108 F. Manalo St, Taguig.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-ivory-dark">
-                    <h3 class="font-bold text-lg text-charcoal mb-2">How can I book an appointment?</h3>
-                    <p class="text-sm text-charcoal-light">You can book instantly online using our appointment form or contact us directly at 09086653969.</p>
-                </div>
+            
+            <div class="bg-white rounded-3xl shadow-xl border border-ivory-dark overflow-hidden p-2 sm:p-6">
+                <!-- Embedded Google Form Iframe -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNEKwfh-kDIgfCoNQHAkPmISYzRz33a3bQtiIwpCgJPOoNYQ/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" class="w-full">Loading…</iframe>
             </div>
         </div>
     </section>
@@ -316,143 +296,5 @@
             &copy; 2026 Rustia Dental Clinic. All rights reserved.
         </div>
     </footer>
-
-    <!-- Booking Modal Form -->
-    <div id="bookingModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 hidden backdrop-blur-sm p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl relative">
-            <div class="bg-sage text-white p-6 flex justify-between items-center">
-                <div>
-                    <h3 class="text-xl font-bold">Book Your Appointment</h3>
-                    <p class="text-xs text-ivory-dark">Rustia Dental Clinic • Manila & Taguig</p>
-                </div>
-                <button onclick="closeBookingModal()" class="text-white hover:text-gold text-xl font-bold w-8 h-8 rounded-full flex items-center justify-center bg-white/10">
-                    &times;
-                </button>
-            </div>
-            
-            <form id="appointmentForm" action="https://formsubmit.co/ajax/dr.rustiadentalclinic@gmail.com" method="POST" class="p-6 space-y-4" onsubmit="handleFormSubmit(event)">
-                <input type="hidden" name="_subject" value="New Appointment Request from Rustia Dental Clinic Website">
-                <input type="hidden" name="_captcha" value="false">
-
-                <div>
-                    <label class="block text-xs font-bold text-charcoal uppercase mb-1">Full Name</label>
-                    <input type="text" name="Patient Name" required class="w-full px-4 py-2.5 rounded-xl border border-ivory-dark bg-ivory text-sm focus:outline-none focus:border-sage" placeholder="Enter your full name">
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-charcoal uppercase mb-1">Mobile Number</label>
-                        <input type="tel" name="Phone Number" required class="w-full px-4 py-2.5 rounded-xl border border-ivory-dark bg-ivory text-sm focus:outline-none focus:border-sage" placeholder="09XXXXXXXXX">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-charcoal uppercase mb-1">Preferred Branch</label>
-                        <select name="Branch" required class="w-full px-4 py-2.5 rounded-xl border border-ivory-dark bg-ivory text-sm focus:outline-none focus:border-sage">
-                            <option value="Manila Branch (Sampaloc)">Manila Branch (Sampaloc)</option>
-                            <option value="Taguig Branch (F. Manalo)">Taguig Branch (F. Manalo)</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-charcoal uppercase mb-1">Service Requested</label>
-                        <select name="Service" class="w-full px-4 py-2.5 rounded-xl border border-ivory-dark bg-ivory text-sm focus:outline-none focus:border-sage">
-                            <option value="Orthodontics & Braces">Orthodontics & Braces</option>
-                            <option value="Teeth Cleaning">Teeth Cleaning</option>
-                            <option value="Tooth Extraction">Tooth Extraction</option>
-                            <option value="Restorative Filling">Restorative Filling</option>
-                            <option value="Crowns / Dentures">Crowns / Dentures</option>
-                            <option value="General Consultation">General Consultation</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-charcoal uppercase mb-1">Preferred Date</label>
-                        <input type="date" name="Preferred Date" required class="w-full px-4 py-2.5 rounded-xl border border-ivory-dark bg-ivory text-sm focus:outline-none focus:border-sage">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-charcoal uppercase mb-1">Additional Notes (Optional)</label>
-                    <textarea name="Notes" rows="2" class="w-full px-4 py-2.5 rounded-xl border border-ivory-dark bg-ivory text-sm focus:outline-none focus:border-sage" placeholder="Specific time or dental concern..."></textarea>
-                </div>
-
-                <button type="submit" id="submitBtn" class="w-full bg-sage hover:bg-sage-dark text-white font-bold py-3 rounded-xl shadow transition-all text-sm">
-                    Confirm & Send Booking Request
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Custom Success Popup Modal -->
-    <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 hidden backdrop-blur-sm p-4">
-        <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl p-8 text-center space-y-6">
-            <div class="w-20 h-20 bg-sage-light text-sage mx-auto rounded-full flex items-center justify-center text-4xl shadow-inner">
-                <i class="fa-solid fa-check"></i>
-            </div>
-            <div class="space-y-2">
-                <h3 class="text-2xl font-bold text-charcoal">Appointment Request Sent!</h3>
-                <p class="text-sm text-charcoal-light leading-relaxed">
-                    Thank you for choosing Rustia Dental Clinic. Our team will contact you shortly to confirm your schedule.
-                </p>
-            </div>
-            <div class="bg-ivory p-4 rounded-2xl border border-ivory-dark text-xs text-charcoal space-y-1">
-                <p class="font-bold text-sage">For urgent matters or immediate confirmation:</p>
-                <p class="text-sm font-bold text-gold pt-1"><i class="fa-solid fa-phone mr-1"></i> 09086653969</p>
-                <p class="text-gray-600 pt-1">Also available via <span class="font-semibold text-charcoal">Viber</span> & <span class="font-semibold text-charcoal">WhatsApp</span></p>
-            </div>
-            <button onclick="closeSuccessModal()" class="w-full bg-sage hover:bg-sage-dark text-white font-bold py-3 rounded-xl shadow transition-all text-sm">
-                Close Window
-            </button>
-        </div>
-    </div>
-
-    <!-- JavaScript for Modal & AJAX Form Handling -->
-    <script>
-        function openBookingModal() {
-            document.getElementById('bookingModal').classList.remove('hidden');
-        }
-        function closeBookingModal() {
-            document.getElementById('bookingModal').classList.add('hidden');
-        }
-        function closeSuccessModal() {
-            document.getElementById('successModal').classList.add('hidden');
-        }
-
-        async function handleFormSubmit(event) {
-            event.preventDefault();
-            const form = document.getElementById('appointmentForm');
-            const submitBtn = document.getElementById('submitBtn');
-            const formData = new FormData(form);
-
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending Request...';
-
-            try {
-                const response = await fetch(form.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: { 'Accept': 'application/json' }
-                });
-
-                if (response.ok) {
-                    closeBookingModal();
-                    form.reset();
-                    document.getElementById('successModal').classList.remove('hidden');
-                } else {
-                    alert('There was a problem submitting your form. Please try calling us directly.');
-                }
-            } catch (error) {
-                alert('Network error. Please call us directly at 09086653969.');
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Confirm & Send Booking Request';
-            }
-        }
-
-        window.onclick = function(event) {
-            let bookingModal = document.getElementById('bookingModal');
-            let successModal = document.getElementById('successModal');
-            if (event.target == bookingModal) {
-                closeBookingModal();
-            }
-            if (event.target == successModal
+</body>
+</html>
