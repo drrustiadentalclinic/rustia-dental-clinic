@@ -1,111 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rustia Dental Clinic | Manila & Taguig Dental Services</title>
-    <meta name="description" content="Rustia Dental Clinic provides expert dental care in Manila and Taguig. Led by Dr. Thomas Rustia and Dr. John Tom Kenneth S. Rustia. Orthodontics, surgery, and family dentistry.">
-    
-    <!-- Tailwind CSS CDN -->
+    <title>Rustia Dental Clinic | Manila & Taguig</title>
+    <meta name="description" content="Rustia Dental Clinic offers expert dental care in Manila and Taguig led by Dr. Thomas Rustia and Dr. John Tom Kenneth S. Rustia.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        sage: {
-                            DEFAULT: '#42675B',
-                            dark: '#325046',
-                            light: '#EBF2EE'
-                        },
-                        ivory: {
-                            DEFAULT: '#FAF7F0',
-                            dark: '#F0EBE1'
-                        },
-                        gold: {
-                            DEFAULT: '#C6A76B',
-                            dark: '#B09257'
-                        },
-                        charcoal: {
-                            DEFAULT: '#333735',
-                            light: '#4A4F4D'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Schema Markup for AI Search Engines -->
+    
+    <!-- Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
       "name": "Rustia Dental Clinic",
       "image": "https://drrustiadentalclinic.github.io/rustia-dental-clinic/rustia-dental-clinic-logo.jpg",
-      "@id": "https://drrustiadentalclinic.github.io/rustia-dental-clinic/",
       "url": "https://drrustiadentalclinic.github.io/rustia-dental-clinic/",
       "telephone": "09086653969",
       "email": "dr.rustiadentalclinic@gmail.com",
-      "priceRange": "₱₱",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "09:00",
-        "closes": "20:00"
-      },
-      "department": [
+      "address": [
         {
-          "@type": "Dentist",
-          "name": "Rustia Dental Clinic - Manila Branch",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "964 Palawan, Sampaloc",
-            "addressLocality": "Manila",
-            "addressRegion": "Metro Manila",
-            "addressCountry": "PH"
-          },
-          "telephone": "09086653969"
+          "@type": "PostalAddress",
+          "streetAddress": "964 Palawan, Sampaloc",
+          "addressLocality": "Manila",
+          "addressRegion": "Metro Manila",
+          "addressCountry": "PH"
         },
         {
-          "@type": "Dentist",
-          "name": "Rustia Dental Clinic - Taguig Branch",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "108 F. Manalo St",
-            "addressLocality": "Taguig",
-            "addressRegion": "Metro Manila",
-            "addressCountry": "PH"
-          },
-          "telephone": "09086653969"
-        }
-      ],
-      "employee": [
-        {
-          "@type": "Person",
-          "name": "Dr. Thomas Rustia",
-          "jobTitle": "Orthodontist / Principal Dentist",
-          "description": "35 years experience, ortho practitioner, Unciano College 1990"
-        },
-        {
-          "@type": "Person",
-          "name": "Dr. John Tom Kenneth S. Rustia",
-          "jobTitle": "Associate Dentist",
-          "description": "Recent CEU graduate specializing in modern restorative & family dentistry"
+          "@type": "PostalAddress",
+          "streetAddress": "108 F. Manalo St",
+          "addressLocality": "Taguig",
+          "addressRegion": "Metro Manila",
+          "addressCountry": "PH"
         }
       ]
     }
     </script>
 </head>
-<body class="bg-[#FAF7F0] text-[#333735] font-sans antialiased">
+<body class="bg-[#FAF7F0] text-[#333735] font-sans">
 
-    <!-- Top Announcement Bar -->
-    <div class="bg-[#42675B] text-[#FAF7F0] text-xs sm:text-sm py-2 px-4 text-center font-medium">
+    <!-- Top Bar -->
+    <div class="bg-[#42675B] text-[#FAF7F0] text-xs py-2 px-4 text-center">
         <span><i class="fa-solid fa-location-dot mr-1"></i> Manila & Taguig Branches</span>
         <span class="mx-2">|</span>
         <span><i class="fa-solid fa-clock mr-1"></i> Open Daily: 9:00 AM – 8:00 PM</span>
@@ -113,338 +48,166 @@
         <span class="font-bold text-[#C6A76B]"><i class="fa-solid fa-phone mr-1"></i> 09086653969</span>
     </div>
 
-    <!-- Navigation Header -->
-    <header class="sticky top-0 z-40 bg-[#FFFFFF]/95 backdrop-blur-md shadow-sm border-b border-[#F0EBE1]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center space-x-3">
-                <img src="rustia-dental-clinic-logo.jpg" alt="Rustia Dental Clinic Logo" class="h-12 w-12 rounded-full object-cover border-2 border-[#C6A76B] shadow-sm">
-                <div>
-                    <span class="text-xl font-bold tracking-tight text-[#325046] block">Rustia Dental Clinic</span>
-                    <span class="text-xs text-[#C6A76B] font-medium tracking-widest uppercase">Expert Dental Care</span>
-                </div>
-            </a>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-[#333735]">
-                <a href="#branches" class="hover:text-[#42675B] transition-colors">Branches</a>
-                <a href="#services" class="hover:text-[#42675B] transition-colors">Services</a>
-                <a href="#dentists" class="hover:text-[#42675B] transition-colors">Our Dentists</a>
-                <a href="#faq" class="hover:text-[#42675B] transition-colors">FAQ</a>
-            </nav>
-            <div>
-                <button onclick="openBookingModal()" class="bg-[#42675B] hover:bg-[#325046] text-[#FFFFFF] font-medium px-5 py-2.5 rounded-full shadow transition-all transform hover:-translate-y-0.5 text-sm">
-                    Book Appointment
-                </button>
+    <!-- Header / Navbar -->
+    <header class="bg-[#FFFFFF] shadow-sm sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="rustia-dental-clinic-logo.jpg" alt="Rustia Dental Clinic Logo" class="h-10 w-10 rounded-full object-cover border border-[#C6A76B]">
+                <span class="text-lg font-bold text-[#42675B]">Rustia Dental Clinic</span>
             </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="#services" class="hover:text-[#42675B]">Services</a>
+                <a href="#branches" class="hover:text-[#42675B]">Branches</a>
+                <a href="#dentists" class="hover:text-[#42675B]">Our Dentists</a>
+                <a href="#contact" class="hover:text-[#42675B]">Contact</a>
+            </nav>
+            <button onclick="openModal()" class="bg-[#42675B] hover:bg-[#325046] text-[#FFFFFF] text-sm font-bold px-4 py-2 rounded-lg shadow">
+                Book Appointment
+            </button>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-[#FAF7F0] via-[#F0EBE1] to-[#EBF2EE] py-20 lg:py-28 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="inline-flex items-center space-x-2 bg-[#42675B]/10 text-[#325046] font-semibold text-xs px-3 py-1.5 rounded-full uppercase tracking-wider">
-                    <i class="fa-solid fa-star text-[#C6A76B]"></i>
-                    <span>Trusted Care Across Metro Manila</span>
-                </span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#333735] tracking-tight leading-tight">
-                    Your Smile, Our Passionate Legacy.
-                </h1>
-                <p class="text-base sm:text-lg text-[#4A4F4D] leading-relaxed">
-                    Combining over 35 years of trusted orthodontic expertise with modern dental techniques. Serving patients across Manila and Taguig with gentle, high-quality family dental care.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <button onclick="openBookingModal()" class="bg-[#42675B] hover:bg-[#325046] text-[#FFFFFF] font-semibold px-8 py-3.5 rounded-full shadow-lg text-center transition-all">
-                        Book Your Visit Now
-                    </button>
-                    <a href="tel:09086653969" class="bg-[#FFFFFF] border-2 border-[#C6A76B] text-[#333735] hover:bg-[#C6A76B]/10 font-semibold px-8 py-3.5 rounded-full shadow-sm text-center transition-all flex items-center justify-center space-x-2">
-                        <i class="fa-solid fa-phone text-[#C6A76B]"></i>
-                        <span>Call 09086653969</span>
-                    </a>
+    <section class="py-16 px-4 text-center max-w-4xl mx-auto space-y-6">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-[#333735] tracking-tight">
+            Trusted Dental Care in Manila & Taguig
+        </h1>
+        <p class="text-base md:text-lg text-[#4A4F4D] max-w-2xl mx-auto">
+            Providing comprehensive family dentistry, orthodontics, and surgical procedures with over 35 years of trusted clinical experience.
+        </p>
+        <div class="flex justify-center gap-4 pt-2">
+            <button onclick="openModal()" class="bg-[#42675B] hover:bg-[#325046] text-[#FFFFFF] font-bold px-6 py-3 rounded-xl shadow-md">
+                Book an Appointment
+            </button>
+            <a href="tel:09086653969" class="bg-[#FFFFFF] border border-[#C6A76B] text-[#333735] font-bold px-6 py-3 rounded-xl shadow-sm flex items-center space-x-2">
+                <i class="fa-solid fa-phone text-[#C6A76B]"></i>
+                <span>Call Now</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-[#FFFFFF] px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-[#333735]">Our Dental Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-[#FAF7F0] p-6 rounded-2xl border border-[#F0EBE1] shadow-sm">
+                    <div class="text-[#C6A76B] text-xl mb-3"><i class="fa-solid fa-teeth"></i></div>
+                    <h3 class="font-bold text-lg mb-1 text-[#333735]">Orthodontics & Braces</h3>
+                    <p class="text-sm text-[#4A4F4D]">Professional bite alignment and brace adjustments.</p>
                 </div>
-            </div>
-            <div class="relative flex justify-center">
-                <div class="w-full max-w-md bg-[#FFFFFF] p-8 rounded-3xl shadow-xl border border-[#F0EBE1] space-y-6">
-                    <div class="flex items-center space-x-4 border-b border-[#F0EBE1] pb-4">
-                        <div class="w-12 h-12 rounded-full bg-[#EBF2EE] flex items-center justify-center text-[#42675B] font-bold text-lg">
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-[#333735]">Clinic Hours</h3>
-                            <p class="text-sm text-[#4A4F4D]">Monday – Sunday: 9:00 AM – 8:00 PM</p>
-                        </div>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="flex items-start space-x-3">
-                            <i class="fa-solid fa-location-dot text-[#C6A76B] mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-sm text-[#333735]">Manila Branch</h4>
-                                <p class="text-xs text-[#4A4F4D]">964 Palawan, Sampaloc, Manila</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-3 pt-2">
-                            <i class="fa-solid fa-location-dot text-[#C6A76B] mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-sm text-[#333735]">Taguig Branch</h4>
-                                <p class="text-xs text-[#4A4F4D]">108 F. Manalo St, Taguig</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="bg-[#FAF7F0] p-6 rounded-2xl border border-[#F0EBE1] shadow-sm">
+                    <div class="text-[#C6A76B] text-xl mb-3"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="font-bold text-lg mb-1 text-[#333735]">Teeth Cleaning</h3>
+                    <p class="text-sm text-[#4A4F4D]">Complete oral prophylaxis and plaque removal.</p>
+                </div>
+                <div class="bg-[#FAF7F0] p-6 rounded-2xl border border-[#F0EBE1] shadow-sm">
+                    <div class="text-[#C6A76B] text-xl mb-3"><i class="fa-solid fa-tooth"></i></div>
+                    <h3 class="font-bold text-lg mb-1 text-[#333735]">Tooth Extractions</h3>
+                    <p class="text-sm text-[#4A4F4D]">Safe and gentle surgical and routine extractions.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Branches Section -->
-    <section id="branches" class="py-20 bg-[#FFFFFF]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-3xl sm:text-4xl font-bold text-[#333735]">Our Clinic Locations</h2>
-                <p class="text-[#4A4F4D]">Visit our fully-equipped dental clinics conveniently located in Manila and Taguig.</p>
+    <section id="branches" class="py-16 px-4 max-w-6xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-[#333735]">Clinic Locations & Hours</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-[#FFFFFF] p-6 rounded-2xl border border-[#F0EBE1] shadow-sm space-y-3">
+                <h3 class="text-xl font-bold text-[#42675B]">Manila Branch</h3>
+                <p class="text-sm text-[#4A4F4D]"><i class="fa-solid fa-location-dot text-[#C6A76B] mr-2"></i>964 Palawan, Sampaloc, Manila</p>
+                <p class="text-sm text-[#4A4F4D]"><i class="fa-solid fa-clock text-[#C6A76B] mr-2"></i>Open Daily: 9:00 AM – 8:00 PM</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Manila Branch -->
-                <div class="bg-[#FAF7F0] p-8 rounded-3xl border border-[#F0EBE1] shadow-sm hover:shadow-md transition-shadow space-y-4">
-                    <div class="w-12 h-12 bg-[#42675B] text-[#FFFFFF] rounded-2xl flex items-center justify-center text-xl font-bold">
-                        <i class="fa-solid fa-clinic-medical"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#333735]">Manila Branch</h3>
-                    <p class="text-[#4A4F4D]"><i class="fa-solid fa-map-pin text-[#C6A76B] mr-2"></i>964 Palawan, Sampaloc, Manila</p>
-                    <p class="text-sm text-[#4A4F4D]">Offering comprehensive orthodontic adjustments, routine cleanings, extractions, and restorative treatments.</p>
-                    <div class="pt-2">
-                        <button onclick="openBookingModal()" class="text-[#42675B] font-bold text-sm hover:underline flex items-center space-x-1">
-                            <span>Book Manila Branch</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
-                    </div>
-                </div>
-                <!-- Taguig Branch -->
-                <div class="bg-[#FAF7F0] p-8 rounded-3xl border border-[#F0EBE1] shadow-sm hover:shadow-md transition-shadow space-y-4">
-                    <div class="w-12 h-12 bg-[#42675B] text-[#FFFFFF] rounded-2xl flex items-center justify-center text-xl font-bold">
-                        <i class="fa-solid fa-clinic-medical"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#333735]">Taguig Branch</h3>
-                    <p class="text-[#4A4F4D]"><i class="fa-solid fa-map-pin text-[#C6A76B] mr-2"></i>108 F. Manalo St, Taguig</p>
-                    <p class="text-sm text-[#4A4F4D]">Equipped for family dentistry, preventive care, cosmetic alignment, and emergency dental pain relief.</p>
-                    <div class="pt-2">
-                        <button onclick="openBookingModal()" class="text-[#42675B] font-bold text-sm hover:underline flex items-center space-x-1">
-                            <span>Book Taguig Branch</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-[#FAF7F0]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-3xl sm:text-4xl font-bold text-[#333735]">Dental Services Provided</h2>
-                <p class="text-[#4A4F4D]">Professional dental procedures tailored for patients of all ages.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1] space-y-3">
-                    <div class="text-[#C6A76B] text-2xl"><i class="fa-solid fa-teeth"></i></div>
-                    <h3 class="font-bold text-lg text-[#333735]">Orthodontics & Braces</h3>
-                    <p class="text-sm text-[#4A4F4D]">Expert alignment and brace adjustments by Dr. Thomas Rustia with 35 years of clinical experience.</p>
-                </div>
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1] space-y-3">
-                    <div class="text-[#C6A76B] text-2xl"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                    <h3 class="font-bold text-lg text-[#333735]">Teeth Cleaning & Scaling</h3>
-                    <p class="text-sm text-[#4A4F4D]">Comprehensive prophylaxis to remove plaque, tartar, and keep your gums healthy and fresh.</p>
-                </div>
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1] space-y-3">
-                    <div class="text-[#C6A76B] text-2xl"><i class="fa-solid fa-tooth"></i></div>
-                    <h3 class="font-bold text-lg text-[#333735]">Tooth Extractions & Surgery</h3>
-                    <p class="text-sm text-[#4A4F4D]">Safe and comfortable surgical extractions, including wisdom teeth removal.</p>
-                </div>
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1] space-y-3">
-                    <div class="text-[#C6A76B] text-2xl"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3 class="font-bold text-lg text-[#333735]">Restorative Fillings</h3>
-                    <p class="text-sm text-[#4A4F4D]">Tooth-colored composite restorations to repair cavities and restore natural tooth structure.</p>
-                </div>
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1] space-y-3">
-                    <div class="text-[#C6A76B] text-2xl"><i class="fa-solid fa-face-smile"></i></div>
-                    <h3 class="font-bold text-lg text-[#333735]">Crowns, Bridges & Dentures</h3>
-                    <p class="text-sm text-[#4A4F4D]">High-quality prosthetic replacements to restore full chewing function and appearance.</p>
-                </div>
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1] space-y-3">
-                    <div class="text-[#C6A76B] text-2xl"><i class="fa-solid fa-kit-medical"></i></div>
-                    <h3 class="font-bold text-lg text-[#333735]">Pediatric & Family Care</h3>
-                    <p class="text-sm text-[#4A4F4D]">Gentle dental checkups and preventive treatments designed specially for children and families.</p>
-                </div>
+            <div class="bg-[#FFFFFF] p-6 rounded-2xl border border-[#F0EBE1] shadow-sm space-y-3">
+                <h3 class="text-xl font-bold text-[#42675B]">Taguig Branch</h3>
+                <p class="text-sm text-[#4A4F4D]"><i class="fa-solid fa-location-dot text-[#C6A76B] mr-2"></i>108 F. Manalo St, Taguig</p>
+                <p class="text-sm text-[#4A4F4D]"><i class="fa-solid fa-clock text-[#C6A76B] mr-2"></i>Open Daily: 9:00 AM – 8:00 PM</p>
             </div>
         </div>
     </section>
 
     <!-- Dentists Section -->
-    <section id="dentists" class="py-20 bg-[#FFFFFF]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-3xl sm:text-4xl font-bold text-[#333735]">Meet Our Dentists</h2>
-                <p class="text-[#4A4F4D]">Decades of combined clinical excellence and trusted patient care.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-                <!-- Dr. Thomas Rustia -->
-                <div class="bg-[#FAF7F0] p-8 rounded-3xl border border-[#F0EBE1] text-center space-y-4">
-                    <div class="w-24 h-24 bg-[#EBF2EE] text-[#42675B] mx-auto rounded-full flex items-center justify-center text-3xl font-bold border-2 border-[#C6A76B]">
-                        <i class="fa-solid fa-user-doctor"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#333735]">Dr. Thomas Rustia</h3>
-                    <p class="text-xs font-semibold text-[#C6A76B] uppercase tracking-wider">Principal Orthodontist</p>
-                    <p class="text-sm text-[#4A4F4D]">With 35 years of dedicated dental and orthodontic practice (Unciano College Class of 1990), Dr. Thomas Rustia is a master clinician specializing in complex bite alignments and comprehensive patient rehabilitation.</p>
+    <section id="dentists" class="py-16 bg-[#FFFFFF] px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-[#333735]">Our Dentists</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div class="bg-[#FAF7F0] p-6 rounded-2xl border border-[#F0EBE1]">
+                    <h3 class="font-bold text-lg text-[#333735]">Dr. Thomas Rustia</h3>
+                    <p class="text-xs text-[#C6A76B] font-bold uppercase mb-2">Principal Orthodontist</p>
+                    <p class="text-sm text-[#4A4F4D]">35 years of clinical excellence (Unciano College Class of 1990).</p>
                 </div>
-                <!-- Dr. John Tom Kenneth S. Rustia -->
-                <div class="bg-[#FAF7F0] p-8 rounded-3xl border border-[#F0EBE1] text-center space-y-4">
-                    <div class="w-24 h-24 bg-[#EBF2EE] text-[#42675B] mx-auto rounded-full flex items-center justify-center text-3xl font-bold border-2 border-[#C6A76B]">
-                        <i class="fa-solid fa-user-doctor"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#333735]">Dr. John Tom Kenneth S. Rustia</h3>
-                    <p class="text-xs font-semibold text-[#C6A76B] uppercase tracking-wider">Associate Dentist</p>
-                    <p class="text-sm text-[#4A4F4D]">A recent graduate of Centro Escolar University (CEU), Dr. John Tom Kenneth brings modern techniques, precision care, and a gentle touch to family, restorative, and preventive dental treatments.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section for AI Search Optimization -->
-    <section id="faq" class="py-20 bg-[#FAF7F0]">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 space-y-3">
-                <h2 class="text-3xl sm:text-4xl font-bold text-[#333735]">Frequently Asked Questions</h2>
-                <p class="text-[#4A4F4D]">Everything you need to know about visiting Rustia Dental Clinic.</p>
-            </div>
-            <div class="space-y-6">
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1]">
-                    <h3 class="font-bold text-lg text-[#333735] mb-2">What are the clinic operating hours?</h3>
-                    <p class="text-sm text-[#4A4F4D]">Rustia Dental Clinic is open daily from 9:00 AM to 8:00 PM across both our Manila and Taguig branches.</p>
-                </div>
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1]">
-                    <h3 class="font-bold text-lg text-[#333735] mb-2">Where are your branches located?</h3>
-                    <p class="text-sm text-[#4A4F4D]">We have two convenient locations: our Manila branch at 964 Palawan, Sampaloc, Manila, and our Taguig branch at 108 F. Manalo St, Taguig.</p>
-                </div>
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1]">
-                    <h3 class="font-bold text-lg text-[#333735] mb-2">How can I book an appointment?</h3>
-                    <p class="text-sm text-[#4A4F4D]">You can book instantly online using our appointment form or contact us directly at 09086653969.</p>
-                </div>
-                <div class="bg-[#FFFFFF] p-6 rounded-2xl shadow-sm border border-[#F0EBE1]">
-                    <h3 class="font-bold text-lg text-[#333735] mb-2">Who are the attending dentists?</h3>
-                    <p class="text-sm text-[#4A4F4D]">Our clinic is led by Dr. Thomas Rustia (orthodontist with 35 years of experience, Unciano College 1990) and Dr. John Tom Kenneth S. Rustia (CEU graduate).</p>
+                <div class="bg-[#FAF7F0] p-6 rounded-2xl border border-[#F0EBE1]">
+                    <h3 class="font-bold text-lg text-[#333735]">Dr. John Tom Kenneth S. Rustia</h3>
+                    <p class="text-xs text-[#C6A76B] font-bold uppercase mb-2">Associate Dentist</p>
+                    <p class="text-sm text-[#4A4F4D]">Specializing in modern restorative and family dental care (CEU Graduate).</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#333735] text-[#FAF7F0] py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="space-y-3">
-                <div class="flex items-center space-x-3">
-                    <img src="rustia-dental-clinic-logo.jpg" alt="Logo" class="h-10 w-10 rounded-full object-cover">
-                    <span class="text-lg font-bold text-[#FFFFFF]">Rustia Dental Clinic</span>
-                </div>
-                <p class="text-xs text-gray-300">Providing trusted orthodontic, surgical, and family dental care in Manila and Taguig.</p>
-            </div>
-            <div class="space-y-2">
-                <h4 class="font-bold text-[#C6A76B] text-sm uppercase tracking-wider">Branches & Contact</h4>
-                <p class="text-xs text-gray-300"><i class="fa-solid fa-location-dot mr-1"></i> Manila: 964 Palawan, Sampaloc, Manila</p>
-                <p class="text-xs text-gray-300"><i class="fa-solid fa-location-dot mr-1"></i> Taguig: 108 F. Manalo St, Taguig</p>
-                <p class="text-xs text-gray-300"><i class="fa-solid fa-phone mr-1"></i> 09086653969</p>
-                <p class="text-xs text-gray-300"><i class="fa-solid fa-envelope mr-1"></i> dr.rustiadentalclinic@gmail.com</p>
-            </div>
-            <div class="space-y-2">
-                <h4 class="font-bold text-[#C6A76B] text-sm uppercase tracking-wider">Hours</h4>
-                <p class="text-xs text-gray-300"><i class="fa-solid fa-clock mr-1"></i> Monday – Sunday</p>
-                <p class="text-xs text-gray-300">9:00 AM – 8:00 PM</p>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-gray-700 text-center text-xs text-gray-400">
-            &copy; 2026 Rustia Dental Clinic. All rights reserved.
-        </div>
+    <footer id="contact" class="bg-[#333735] text-[#FAF7F0] py-8 px-4 text-center text-xs space-y-2">
+        <p>&copy; 2026 Rustia Dental Clinic. All rights reserved.</p>
+        <p>Contact: 09086653969 | Email: dr.rustiadentalclinic@gmail.com</p>
     </footer>
 
-    <!-- Booking Modal Form connected to FormSubmit -->
-    <div id="bookingModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 hidden backdrop-blur-sm p-4">
-        <div class="bg-[#FFFFFF] rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl relative">
-            <div class="bg-[#42675B] text-[#FFFFFF] p-6 flex justify-between items-center">
-                <div>
-                    <h3 class="text-xl font-bold">Book Your Appointment</h3>
-                    <p class="text-xs text-[#F0EBE1]">Rustia Dental Clinic • Manila & Taguig</p>
-                </div>
-                <button onclick="closeBookingModal()" class="text-[#FFFFFF] hover:text-[#C6A76B] text-xl font-bold w-8 h-8 rounded-full flex items-center justify-center bg-white/10">
-                    &times;
-                </button>
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-black/60 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-[#FFFFFF] rounded-2xl max-w-md w-full overflow-hidden shadow-xl">
+            <div class="bg-[#42675B] text-[#FFFFFF] p-4 flex justify-between items-center">
+                <h3 class="font-bold">Book Appointment</h3>
+                <button onclick="closeModal()" class="text-lg font-bold">&times;</button>
             </div>
             
-            <form action="https://formsubmit.co/dr.rustiadentalclinic@gmail.com" method="POST" class="p-6 space-y-4">
-                <!-- FormSubmit Configuration Hidden Fields -->
+            <form action="https://formsubmit.co/dr.rustiadentalclinic@gmail.com" method="POST" class="p-4 space-y-3">
                 <input type="hidden" name="_next" value="https://drrustiadentalclinic.github.io/rustia-dental-clinic/">
-                <input type="hidden" name="_subject" value="New Appointment Request from Rustia Dental Clinic Website">
+                <input type="hidden" name="_subject" value="New Appointment Request">
                 <input type="hidden" name="_captcha" value="false">
 
                 <div>
-                    <label class="block text-xs font-bold text-[#333735] uppercase mb-1">Full Name</label>
-                    <input type="text" name="Patient Name" required class="w-full px-4 py-2.5 rounded-xl border border-[#F0EBE1] bg-[#FAF7F0] text-sm focus:outline-none focus:border-[#42675B]" placeholder="Enter your full name">
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-[#333735] uppercase mb-1">Mobile Number</label>
-                        <input type="tel" name="Phone Number" required class="w-full px-4 py-2.5 rounded-xl border border-[#F0EBE1] bg-[#FAF7F0] text-sm focus:outline-none focus:border-[#42675B]" placeholder="09XXXXXXXXX">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-[#333735] uppercase mb-1">Preferred Branch</label>
-                        <select name="Branch" required class="w-full px-4 py-2.5 rounded-xl border border-[#F0EBE1] bg-[#FAF7F0] text-sm focus:outline-none focus:border-[#42675B]">
-                            <option value="Manila Branch (Sampaloc)">Manila Branch (Sampaloc)</option>
-                            <option value="Taguig Branch (F. Manalo)">Taguig Branch (F. Manalo)</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-[#333735] uppercase mb-1">Service Requested</label>
-                        <select name="Service" class="w-full px-4 py-2.5 rounded-xl border border-[#F0EBE1] bg-[#FAF7F0] text-sm focus:outline-none focus:border-[#42675B]">
-                            <option value="Orthodontics & Braces">Orthodontics & Braces</option>
-                            <option value="Teeth Cleaning">Teeth Cleaning</option>
-                            <option value="Tooth Extraction">Tooth Extraction</option>
-                            <option value="Restorative Filling">Restorative Filling</option>
-                            <option value="Crowns / Dentures">Crowns / Dentures</option>
-                            <option value="General Consultation">General Consultation</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-[#333735] uppercase mb-1">Preferred Date</label>
-                        <input type="date" name="Preferred Date" required class="w-full px-4 py-2.5 rounded-xl border border-[#F0EBE1] bg-[#FAF7F0] text-sm focus:outline-none focus:border-[#42675B]">
-                    </div>
+                    <label class="block text-xs font-bold uppercase mb-1">Full Name</label>
+                    <input type="text" name="Patient Name" required class="w-full p-2 border border-[#F0EBE1] rounded-lg text-sm bg-[#FAF7F0]">
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-[#333735] uppercase mb-1">Additional Notes (Optional)</label>
-                    <textarea name="Notes" rows="2" class="w-full px-4 py-2.5 rounded-xl border border-[#F0EBE1] bg-[#FAF7F0] text-sm focus:outline-none focus:border-[#42675B]" placeholder="Specific time or dental concern..."></textarea>
+                    <label class="block text-xs font-bold uppercase mb-1">Mobile Number</label>
+                    <input type="tel" name="Phone Number" required class="w-full p-2 border border-[#F0EBE1] rounded-lg text-sm bg-[#FAF7F0]" placeholder="09XXXXXXXXX">
                 </div>
 
-                <button type="submit" class="w-full bg-[#42675B] hover:bg-[#325046] text-[#FFFFFF] font-bold py-3 rounded-xl shadow transition-all text-sm">
-                    Confirm & Send Booking Request
+                <div>
+                    <label class="block text-xs font-bold uppercase mb-1">Branch</label>
+                    <select name="Branch" class="w-full p-2 border border-[#F0EBE1] rounded-lg text-sm bg-[#FAF7F0]">
+                        <option value="Manila Branch">Manila Branch</option>
+                        <option value="Taguig Branch">Taguig Branch</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase mb-1">Service</label>
+                    <select name="Service" class="w-full p-2 border border-[#F0EBE1] rounded-lg text-sm bg-[#FAF7F0]">
+                        <option value="Orthodontics & Braces">Orthodontics & Braces</option>
+                        <option value="Teeth Cleaning">Teeth Cleaning</option>
+                        <option value="Tooth Extraction">Tooth Extraction</option>
+                        <option value="General Consultation">General Consultation</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase mb-1">Preferred Date</label>
+                    <input type="date" name="Preferred Date" required class="w-full p-2 border border-[#F0EBE1] rounded-lg text-sm bg-[#FAF7F0]">
+                </div>
+
+                <button type="submit" class="w-full bg-[#42675B] text-[#FFFFFF] font-bold py-2.5 rounded-lg text-sm mt-2">
+                    Submit Request
                 </button>
             </form>
         </div>
     </div>
 
-    <!-- JavaScript for Modal Control -->
     <script>
-        function openBookingModal() {
-            document.getElementById('bookingModal').classList.remove('hidden');
-        }
-        function closeBookingModal() {
-            document.getElementById('bookingModal').classList.add('hidden');
-        }
-        window.onclick = function(event) {
-            let modal = document.getElementById('bookingModal');
-            if (event.target == modal) {
-                closeBookingModal();
-            }
-        }
+        function openModal() { document.getElementById('bookingModal').classList.remove('hidden'); }
+        function closeModal() { document.getElementById('bookingModal').classList.add('hidden'); }
     </script>
 </body>
 </html>
