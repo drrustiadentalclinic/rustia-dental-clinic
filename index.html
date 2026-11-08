@@ -741,7 +741,8 @@
             </div>
 
             <!-- Booking Form -->
-            <form action="https://formsubmit.co/dr.rustiadentalclinic@gmail.com" method="POST" class="p-6 space-y-4">
+            <form id="appointmentForm" onsubmit="handleFormSubmit(event)" class="p-6 space-y-4">
+		<input type="hidden" name="_next" value="https://drrustiadentalclinic.github.io/rustia-dental-clinic/">
                 
                 <!-- Branch Selection -->
                 <div>
